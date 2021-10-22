@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <h2 class="calc">calc</h2>
+      <div id="display" class="display"></div>
+      <div class="bottom-div">
+        <button class="button" @click="seven()">7</button>
+        <button class="button">8</button><button class="button">9</button
+        ><button class="button">DEL</button><button class="button">4</button
+        ><button @click="five" class="button">5</button
+        ><button class="button">6</button><button class="button">+</button
+        ><button class="button">1</button><button class="button">2</button
+        ><button class="button">3</button><button class="button">-</button
+        ><button class="button">.</button><button class="button">0</button
+        ><button class="button">/</button
+        ><button @click="times()" class="button">*</button
+        ><button id="reset-btn" class="button">RESET</button
+        ><button id="equal-btn" class="button">=</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
