@@ -29,7 +29,20 @@
   </head>
   <body>
     <div id="app" class="container">
-      <h2 class="calc">calc</h2>
+      <div class="top-container">
+        <h2 class="calc t-white">calc</h2>
+        <div class="theme-comp">
+          <p class="t-white">THEME</p>
+          <div class="theme-bar d-flex flex-col">
+            <div class="d-flex t-white">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <button class="theme-btn"></button>
+          </div>
+        </div>
+      </div>
       <div id="display" class="display"></div>
       <div class="bottom-div">
         <button class="button" @click="seven()">7</button>
@@ -53,9 +66,9 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Noyan Seçkin</a>.
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>
